@@ -5,10 +5,17 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 function App() {
+
+  const list = ['john','david','jane']
+
   return (
-    <><Header />
-    <List />
-    <Footer /></>
+    <>
+    <div className='wrapper'>
+    <Header />
+    <List list ={list} />
+    <Footer />
+    </div>
+    </>
   );
 }
 

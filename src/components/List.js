@@ -1,6 +1,10 @@
-const List = () => {
+const List = ({list}) => {
+
   return (
-    <div>List</div>
+    <div className="list">
+        <h2>List component</h2>
+        <p>{list.toString()}</p>
+    </div>
   )
 }
 
