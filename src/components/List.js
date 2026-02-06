@@ -7,7 +7,6 @@ import Child from "./Child";
     name: "David",
     designation: "Software Engineer",
   });
-  */
 
 const List = () => {
   const [list, setList] = useState([
@@ -16,7 +15,6 @@ const List = () => {
     { name: "David", designation: "Frontend Enigneer" },
   ]);
 
-  /*
   const updateState = () => {
     setDetails({
       ...details,
@@ -37,7 +35,7 @@ const List = () => {
     inputRef.current.focus();
   };
 
-  */
+
 
 
   // map through the array
@@ -58,5 +56,23 @@ const List = () => {
     </div>
   );
 };
+
+
+*/
+
+const List = () =>{
+
+const handleClick = (id,e) => console.log(id,e)
+
+const handleChange = (e) => console.log(e.target.id)
+
+  return (
+    <div className="list">
+      <h2>Handling Events in React</h2>
+      <input type="text" placeholder="Some text here" id="name" onChange={handleChange}/>
+      <button id="btn-id" onClick={handleClick}> Click Me</button>
+    </div>
+  )
+}
 
 export default List;
