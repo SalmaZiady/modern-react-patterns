@@ -60,6 +60,7 @@ const List = () => {
 
 */
 
+/*
 const List = () =>{
 
 const handleClick = (id,e) => console.log(id,e)
@@ -76,3 +77,23 @@ const handleChange = (e) => console.log(e.target.id)
 }
 
 export default List;
+
+*/
+
+const List = () => {
+
+const [error, setError] = useState(true);
+
+
+
+return (
+
+  <div className="list">
+    <h2>Conditional Rendering</h2>
+    {error &&  <p>Some error here</p> }
+  
+  </div>
+)
+}
+
+export default List
