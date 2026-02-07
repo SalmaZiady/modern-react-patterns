@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState } from "react";
+import {Helmet} from 'react-helmet';
+import Head from "./layout/Head";
 
 const Home = () => {
   const [data, setData] = useState([]);
@@ -30,6 +32,8 @@ const Home = () => {
   
   return (
     <div>
+      <Head title={"Home"}>
+      </Head>
       <h1>API Integration in React</h1>
       {loader ? (
         <h1>Loading.....</h1>

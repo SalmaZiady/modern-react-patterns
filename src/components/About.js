@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import { Helmet } from "react-helmet";
+import Head from "./layout/Head";
 
 const About = () => {
   return (
-    <div>About</div>
-  )
-}
+    <div>
+      <Head title="About">
+      </Head>
+      About
+    </div>
+  );
+};
 
-export default About
+export default About;
