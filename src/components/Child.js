@@ -1,8 +1,20 @@
+import PropTypes from "prop-types";
 
-const Child = ({details}) => {
+const Child = ({name, channel, subscribers}) => {
   return (
-   <p> my name is {details.name} and I am working as {details.designation} </p>
+    <div>
+      <h1>Prop Types</h1>
+      {name} - {channel} - {subscribers}
+    </div>
   )
 }
+
+Child.propTypes = {
+  name: PropTypes.string,
+  subscribers: PropTypes.number,
+  channel: PropTypes.string
+
+}
+
 
 export default Child
