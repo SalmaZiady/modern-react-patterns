@@ -7,7 +7,9 @@ import Child from "./Child";
 const About = () => {
   return (
     <div>
-      <Child name="Ministry of JS" channel="youtube" subscribers={100}></Child>
+      <Child>
+        This is a text coming between the component tag.
+      </Child>
     </div>
   );
 };
